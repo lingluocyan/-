@@ -1,0 +1,22 @@
+<!-- 顶部轮播图部分 -->
+<w-swiper banner="{{banner}}"></w-swiper>
+
+<!-- 精品推荐部分 -->
+<w-recommend bind:loadOk="loadOk" recommend="{{recommend}}"></w-recommend>
+
+<!-- 本周流行部分 -->
+<w-pop></w-pop>
+
+<!-- tab切换部分 -->
+<w-tab-control id="tab-Conrtol"
+class="{{scrollVal > tabScrollTop ? 'fixed' : ''}}"
+ list='{{tabList}}' bind:tabClick="tabClick"></w-tab-control>
+<w-tab-control id="tab-Conrtol"
+class="{{isTabFixed ? 'fixed': ''}}"
+ list='{{tabList}}' bind:tabClick="tabClick" wx:if="{{isTabFixed}}"></w-tab-control>
+
+<!-- 商品展示部分 -->
+<w-goods goods='{{goods[currentType].list}}'></w-goods>
+
+<!-- 回到顶部部分 -->
+<w-go-top wx:if="{{showBackTop}}"></w-go-top>

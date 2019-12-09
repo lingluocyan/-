@@ -1,0 +1,11 @@
+/* components/w-go-top/w-go-top.wxss */
+.box {
+  position: fixed;
+  right: 30rpx;
+  bottom: 30rpx;
+}
+
+.image {
+  width: 90rpx;
+  height: 90rpx
+}

@@ -1,0 +1,7 @@
+/* components/w-swiper/w-swiper.wxss */
+.home-swiper {
+
+}
+.home-swiper .home-swiper-item  image{
+  width: 100%;
+}

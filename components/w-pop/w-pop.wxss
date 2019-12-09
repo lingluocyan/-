@@ -1,0 +1,9 @@
+/* components/w-pop/w-pop.wxss */
+.popular {
+  display: flex;
+  height: 500rpx;
+}
+.popular image {
+  flex: 1;
+  height: 100%;
+}
